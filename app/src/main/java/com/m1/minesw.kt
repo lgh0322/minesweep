@@ -250,7 +250,7 @@ class minesw(context: Context?, attrs: AttributeSet?) : SurfaceView(context, att
     internal inner class MyThread : Runnable {
         override fun run() {
             println("555")
-            while (isGet == false) {
+            while (!isGet) {
             }
             initView()
             while (isRun) {
